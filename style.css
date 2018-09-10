@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    font-family: 'lato';
+    height: 9vh;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    font-size: 1.5em;
+    color: #767676;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+}
+
+.t1{
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.opciones{
+    display:flex;
+    justify-content: space-between;
+    margin-top:5px;
+    font-size: 0.7em;
+}
+.opciones p{
+    margin-right: 40px;
+}
+.opciones p:hover{
+    color:#F95759;
+}
+
+
+.contenedor{    
+    background-color:#ffff;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-row-gap: 90px;
+    grid-column-gap: 15px;
+    
+}
+
+.caja{
+    border-top:1px solid #767676;
+    margin: 0 30px;
+}
+
+.caja .tit{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;   
+}
+
+.p1{
+    margin-top:30px;
+}
+
+.cont1{
+    font-family: 'roboto', sans-serif;
+    font-size: 2em;
+}
+.enca{
+    display:flex;
+    justify-content: space-between;
+}
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    background:#F95759;
+    outline:none;
+    margin-top:10px;
+    border-radius: 3px;
+    height: 2px;
+    width:80px;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #F95759;
+    cursor: pointer;
+}
+.textboxes{
+    width: 150px;
+    margin-top:15px;
+    margin-right: 25px;
+    border:0;
+    outline:none;
+    border-bottom: 2px solid #F95759;
+    font-family: 'lato', sans-serif;
+}
+.cont2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+.cont3{
+    font-family: 'Kosugi', sans-serif;
+    font-size: 2em;
+}
+.cont4{
+    font-family: 'Metamorphous', sans-serif;
+    font-size: 2em;
+}
+.cont5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+.cont6{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2em;
+}
+.cont7{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+}
+.cont8{
+    font-family: 'Lora', sans-serif;
+    font-size: 2em;
+}
+
+footer{
+    background:#222222;   
+    height: 80px;
+    display:flex;
+    align-items: center;
+    margin-top:80px;
+}
+footer p{
+    margin-left:30px;
+    color:white;
+    font-family: 'lato';
+    font-size: 1.5em;
+}
+
+
+@media (max-width: 850px){
+    .contenedor{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+@media (max-width: 550px){
+    .contenedor{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    .opciones{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+}
